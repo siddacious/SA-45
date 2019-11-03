@@ -3094,85 +3094,85 @@
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="C27_A" class="0">
 <segment>
 <pinref part="C27" gate="G$1" pin="1"/>
 <wire x1="-63.5" y1="76.2" x2="-76.2" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="C27_B" class="0">
 <segment>
 <pinref part="C27" gate="G$1" pin="2"/>
 <wire x1="-55.88" y1="76.2" x2="-43.18" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="C18_A" class="0">
 <segment>
 <pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="-66.04" y1="114.3" x2="-78.74" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="C18_B" class="0">
 <segment>
 <pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="-58.42" y1="114.3" x2="-45.72" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="C28_A" class="0">
 <segment>
 <pinref part="C28" gate="G$1" pin="1"/>
 <wire x1="-63.5" y1="86.36" x2="-76.2" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="C28_B" class="0">
 <segment>
 <pinref part="C28" gate="G$1" pin="2"/>
 <wire x1="-55.88" y1="86.36" x2="-43.18" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="C19_A" class="0">
 <segment>
 <pinref part="C19" gate="G$1" pin="1"/>
 <wire x1="-66.04" y1="124.46" x2="-78.74" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="C19_B" class="0">
 <segment>
 <pinref part="C19" gate="G$1" pin="2"/>
 <wire x1="-58.42" y1="124.46" x2="-45.72" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="R62_A" class="0">
 <segment>
 <pinref part="R62" gate="G$1" pin="1"/>
 <wire x1="-63.5" y1="58.42" x2="-76.2" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="R62_B" class="0">
 <segment>
 <pinref part="R62" gate="G$1" pin="2"/>
 <wire x1="-53.34" y1="58.42" x2="-40.64" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="R44_A" class="0">
 <segment>
 <pinref part="R44" gate="G$1" pin="1"/>
 <wire x1="-66.04" y1="96.52" x2="-78.74" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="R44_B" class="0">
 <segment>
 <pinref part="R44" gate="G$1" pin="2"/>
 <wire x1="-55.88" y1="96.52" x2="-43.18" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="R63_A" class="0">
 <segment>
 <pinref part="R63" gate="G$1" pin="1"/>
 <wire x1="-63.5" y1="68.58" x2="-76.2" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="R63_B" class="0">
 <segment>
 <pinref part="R63" gate="G$1" pin="2"/>
 <wire x1="-53.34" y1="68.58" x2="-40.64" y2="68.58" width="0.1524" layer="91"/>
@@ -3208,121 +3208,121 @@
 <wire x1="83.82" y1="162.56" x2="96.52" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="R81_A" class="0">
 <segment>
 <pinref part="R81" gate="G$1" pin="1"/>
 <wire x1="-43.18" y1="160.02" x2="-43.18" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="R81_B" class="0">
 <segment>
 <pinref part="R81" gate="G$1" pin="2"/>
 <wire x1="-43.18" y1="170.18" x2="-43.18" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="R51_A" class="0">
 <segment>
 <pinref part="R51" gate="G$1" pin="1"/>
 <wire x1="256.54" y1="160.02" x2="256.54" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="R51_B" class="0">
 <segment>
 <pinref part="R51" gate="G$1" pin="2"/>
 <wire x1="256.54" y1="170.18" x2="256.54" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="R52_A" class="0">
 <segment>
 <pinref part="R52" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="160.02" x2="243.84" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="R52_B" class="0">
 <segment>
 <pinref part="R52" gate="G$1" pin="2"/>
 <wire x1="243.84" y1="170.18" x2="243.84" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="R49_A" class="0">
 <segment>
 <pinref part="R49" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="160.02" x2="228.6" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="R49_B" class="0">
 <segment>
 <pinref part="R49" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="170.18" x2="228.6" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$28" class="0">
+<net name="R100_A" class="0">
 <segment>
 <pinref part="R100" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="160.02" x2="215.9" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="R100_B" class="0">
 <segment>
 <pinref part="R100" gate="G$1" pin="2"/>
 <wire x1="215.9" y1="170.18" x2="215.9" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="R99_A" class="0">
 <segment>
 <pinref part="R99" gate="G$1" pin="1"/>
 <wire x1="203.2" y1="160.02" x2="203.2" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="R99_B" class="0">
 <segment>
 <pinref part="R99" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="170.18" x2="203.2" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$32" class="0">
+<net name="R27_A" class="0">
 <segment>
 <pinref part="R27" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="160.02" x2="185.42" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="R27_B" class="0">
 <segment>
 <pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="170.18" x2="185.42" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="R7_A" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="160.02" x2="35.56" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$35" class="0">
+<net name="R7_B" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="170.18" x2="35.56" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="R6_A" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="160.02" x2="2.54" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="R6_B" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="170.18" x2="2.54" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="R54_A" class="0">
 <segment>
 <pinref part="R54" gate="G$1" pin="1"/>
 <wire x1="-5.08" y1="144.78" x2="7.62" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="R54_B" class="0">
 <segment>
 <pinref part="R54" gate="G$1" pin="2"/>
 <wire x1="-15.24" y1="144.78" x2="-27.94" y2="144.78" width="0.1524" layer="91"/>
@@ -3382,253 +3382,253 @@
 <wire x1="-17.78" y1="182.88" x2="-5.08" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$49" class="0">
+<net name="C26_A" class="0">
 <segment>
 <pinref part="C26" gate="G$1" pin="1"/>
 <wire x1="261.62" y1="68.58" x2="248.92" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$50" class="0">
+<net name="C26_B" class="0">
 <segment>
 <pinref part="C26" gate="G$1" pin="2"/>
 <wire x1="269.24" y1="68.58" x2="281.94" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$51" class="0">
+<net name="C31_A" class="0">
 <segment>
 <pinref part="C31" gate="G$1" pin="1"/>
 <wire x1="259.08" y1="109.22" x2="246.38" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$52" class="0">
+<net name="C31_B" class="0">
 <segment>
 <pinref part="C31" gate="G$1" pin="2"/>
 <wire x1="266.7" y1="109.22" x2="279.4" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$53" class="0">
+<net name="C39_A" class="0">
 <segment>
 <pinref part="C39" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="2.54" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$54" class="0">
+<net name="C39_B" class="0">
 <segment>
 <pinref part="C39" gate="G$1" pin="2"/>
 <wire x1="25.4" y1="-5.08" x2="25.4" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$55" class="0">
+<net name="C38_A" class="0">
 <segment>
 <pinref part="C38" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="2.54" x2="38.1" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$56" class="0">
+<net name="C38_B" class="0">
 <segment>
 <pinref part="C38" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="-5.08" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$57" class="0">
+<net name="C23_A" class="0">
 <segment>
 <pinref part="C23" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="93.98" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$58" class="0">
+<net name="C23_B" class="0">
 <segment>
 <pinref part="C23" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="101.6" x2="76.2" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$59" class="0">
+<net name="C21_A" class="0">
 <segment>
 <pinref part="C21" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="40.64" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$60" class="0">
+<net name="C21_B" class="0">
 <segment>
 <pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="40.64" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$61" class="0">
+<net name="C29_A" class="0">
 <segment>
 <pinref part="C29" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="109.22" x2="12.7" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$62" class="0">
+<net name="C29_B" class="0">
 <segment>
 <pinref part="C29" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="109.22" x2="45.72" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$63" class="0">
+<net name="C24_A" class="0">
 <segment>
 <pinref part="C24" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="114.3" x2="12.7" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$64" class="0">
+<net name="C24_B" class="0">
 <segment>
 <pinref part="C24" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="114.3" x2="45.72" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$65" class="0">
+<net name="C11_A" class="0">
 <segment>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="12.7" x2="198.12" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$66" class="0">
+<net name="C11_B" class="0">
 <segment>
 <pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="12.7" x2="165.1" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$67" class="0">
+<net name="C25_A" class="0">
 <segment>
 <pinref part="C25" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="119.38" x2="12.7" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$68" class="0">
+<net name="C25_B" class="0">
 <segment>
 <pinref part="C25" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="119.38" x2="45.72" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$71" class="0">
+<net name="C33_A" class="0">
 <segment>
 <pinref part="C33" gate="G$1" pin="1"/>
 <wire x1="-2.54" y1="55.88" x2="-15.24" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$72" class="0">
+<net name="C33_B" class="0">
 <segment>
 <pinref part="C33" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$73" class="0">
+<net name="R5_A" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="248.92" y1="-30.48" x2="248.92" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$74" class="0">
+<net name="R5_B" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="-40.64" x2="248.92" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$75" class="0">
+<net name="R64_A" class="0">
 <segment>
 <pinref part="R64" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="-5.08" x2="284.48" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$76" class="0">
+<net name="R64_B" class="0">
 <segment>
 <pinref part="R64" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="-5.08" x2="248.92" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$77" class="0">
+<net name="C36_A" class="0">
 <segment>
 <pinref part="C36" gate="G$1" pin="1"/>
 <wire x1="-2.54" y1="27.94" x2="-15.24" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$78" class="0">
+<net name="C36_B" class="0">
 <segment>
 <pinref part="C36" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="27.94" x2="17.78" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$79" class="0">
+<net name="R66_A" class="0">
 <segment>
 <pinref part="R66" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="5.08" x2="284.48" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$80" class="0">
+<net name="R66_B" class="0">
 <segment>
 <pinref part="R66" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="5.08" x2="248.92" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$81" class="0">
+<net name="R18_A" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="25.4" x2="284.48" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$82" class="0">
+<net name="R18_B" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="25.4" x2="248.92" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$83" class="0">
+<net name="R23_A" class="0">
 <segment>
 <pinref part="R23" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="35.56" x2="284.48" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$84" class="0">
+<net name="R23_B" class="0">
 <segment>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="35.56" x2="248.92" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$85" class="0">
+<net name="R29_A" class="0">
 <segment>
 <pinref part="R29" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="43.18" x2="284.48" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$86" class="0">
+<net name="R29_B" class="0">
 <segment>
 <pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="43.18" x2="248.92" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$87" class="0">
+<net name="R60_A" class="0">
 <segment>
 <pinref part="R60" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="48.26" x2="284.48" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$88" class="0">
+<net name="R60_B" class="0">
 <segment>
 <pinref part="R60" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="48.26" x2="248.92" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$89" class="0">
+<net name="R22_A" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="12.7" x2="284.48" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$90" class="0">
+<net name="R22_B" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="12.7" x2="248.92" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$91" class="0">
+<net name="R55_A" class="0">
 <segment>
 <pinref part="R55" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="55.88" x2="284.48" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$92" class="0">
+<net name="R55_B" class="0">
 <segment>
 <pinref part="R55" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="55.88" x2="248.92" y2="55.88" width="0.1524" layer="91"/>
@@ -3646,109 +3646,109 @@
 <wire x1="27.94" y1="63.5" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$95" class="0">
+<net name="R61_A" class="0">
 <segment>
 <pinref part="R61" gate="G$1" pin="1"/>
 <wire x1="269.24" y1="83.82" x2="281.94" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$96" class="0">
+<net name="R61_B" class="0">
 <segment>
 <pinref part="R61" gate="G$1" pin="2"/>
 <wire x1="259.08" y1="83.82" x2="246.38" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$97" class="0">
+<net name="R59_A" class="0">
 <segment>
 <pinref part="R59" gate="G$1" pin="1"/>
 <wire x1="269.24" y1="91.44" x2="281.94" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$98" class="0">
+<net name="R59_B" class="0">
 <segment>
 <pinref part="R59" gate="G$1" pin="2"/>
 <wire x1="259.08" y1="91.44" x2="246.38" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$99" class="0">
+<net name="R76_A" class="0">
 <segment>
 <pinref part="R76" gate="G$1" pin="1"/>
 <wire x1="269.24" y1="101.6" x2="281.94" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$100" class="0">
+<net name="R76_B" class="0">
 <segment>
 <pinref part="R76" gate="G$1" pin="2"/>
 <wire x1="259.08" y1="101.6" x2="246.38" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$101" class="0">
+<net name="R68_A" class="0">
 <segment>
 <pinref part="R68" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$102" class="0">
+<net name="R68_B" class="0">
 <segment>
 <pinref part="R68" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="55.88" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$103" class="0">
+<net name="R26_A" class="0">
 <segment>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="48.26" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$104" class="0">
+<net name="R26_B" class="0">
 <segment>
 <pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$105" class="0">
+<net name="R71_A" class="0">
 <segment>
 <pinref part="R71" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="63.5" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$106" class="0">
+<net name="R71_B" class="0">
 <segment>
 <pinref part="R71" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$107" class="0">
+<net name="R25_A" class="0">
 <segment>
 <pinref part="R25" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="96.52" x2="7.62" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$108" class="0">
+<net name="R25_B" class="0">
 <segment>
 <pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="106.68" x2="7.62" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$109" class="0">
+<net name="R30_A" class="0">
 <segment>
 <pinref part="R30" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="-7.62" x2="60.96" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$110" class="0">
+<net name="R30_B" class="0">
 <segment>
 <pinref part="R30" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="2.54" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$111" class="0">
+<net name="R77_A" class="0">
 <segment>
 <pinref part="R77" gate="G$1" pin="1"/>
 <wire x1="-2.54" y1="17.78" x2="-15.24" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$112" class="0">
+<net name="R77_B" class="0">
 <segment>
 <pinref part="R77" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="17.78" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
@@ -3784,13 +3784,13 @@
 <wire x1="223.52" y1="38.1" x2="236.22" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$118" class="0">
+<net name="C35_A" class="0">
 <segment>
 <pinref part="C35" gate="G$1" pin="1"/>
 <wire x1="-2.54" y1="35.56" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$119" class="0">
+<net name="C35_B" class="0">
 <segment>
 <pinref part="C35" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="35.56" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
@@ -3814,49 +3814,49 @@
 <wire x1="35.56" y1="83.82" x2="48.26" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$123" class="0">
+<net name="C16_A" class="0">
 <segment>
 <pinref part="C16" gate="G$1" pin="1"/>
 <wire x1="-66.04" y1="30.48" x2="-78.74" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$124" class="0">
+<net name="C16_B" class="0">
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="-58.42" y1="30.48" x2="-45.72" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$125" class="0">
+<net name="C17_A" class="0">
 <segment>
 <pinref part="C17" gate="G$1" pin="1"/>
 <wire x1="-66.04" y1="38.1" x2="-78.74" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$126" class="0">
+<net name="C17_B" class="0">
 <segment>
 <pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="-58.42" y1="38.1" x2="-45.72" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$127" class="0">
+<net name="R43_A" class="0">
 <segment>
 <pinref part="R43" gate="G$1" pin="1"/>
 <wire x1="-66.04" y1="12.7" x2="-78.74" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$128" class="0">
+<net name="R43_B" class="0">
 <segment>
 <pinref part="R43" gate="G$1" pin="2"/>
 <wire x1="-55.88" y1="12.7" x2="-43.18" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$129" class="0">
+<net name="R45_A" class="0">
 <segment>
 <pinref part="R45" gate="G$1" pin="1"/>
 <wire x1="-66.04" y1="20.32" x2="-78.74" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$130" class="0">
+<net name="R45_B" class="0">
 <segment>
 <pinref part="R45" gate="G$1" pin="2"/>
 <wire x1="-55.88" y1="20.32" x2="-43.18" y2="20.32" width="0.1524" layer="91"/>

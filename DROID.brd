@@ -983,46 +983,46 @@ design rules under a new name.</description>
 </element>
 </elements>
 <signals>
-<signal name="N$1">
+<signal name="C27_A">
 <contactref element="C27" pad="1"/>
 </signal>
-<signal name="N$2">
+<signal name="C27_B">
 <contactref element="C27" pad="2"/>
 </signal>
-<signal name="N$3">
+<signal name="C18_A">
 <contactref element="C18" pad="1"/>
 </signal>
-<signal name="N$4">
+<signal name="C18_B">
 <contactref element="C18" pad="2"/>
 </signal>
-<signal name="N$5">
+<signal name="C28_A">
 <contactref element="C28" pad="1"/>
 </signal>
-<signal name="N$6">
+<signal name="C28_B">
 <contactref element="C28" pad="2"/>
 </signal>
-<signal name="N$7">
+<signal name="C19_A">
 <contactref element="C19" pad="1"/>
 </signal>
-<signal name="N$8">
+<signal name="C19_B">
 <contactref element="C19" pad="2"/>
 </signal>
-<signal name="N$9">
+<signal name="R62_A">
 <contactref element="R62" pad="1"/>
 </signal>
-<signal name="N$10">
+<signal name="R62_B">
 <contactref element="R62" pad="2"/>
 </signal>
-<signal name="N$11">
+<signal name="R44_A">
 <contactref element="R44" pad="1"/>
 </signal>
-<signal name="N$12">
+<signal name="R44_B">
 <contactref element="R44" pad="2"/>
 </signal>
-<signal name="N$13">
+<signal name="R63_A">
 <contactref element="R63" pad="1"/>
 </signal>
-<signal name="N$14">
+<signal name="R63_B">
 <contactref element="R63" pad="2"/>
 </signal>
 <signal name="N$15">
@@ -1040,64 +1040,64 @@ design rules under a new name.</description>
 <signal name="N$19">
 <contactref element="Q14" pad="2"/>
 </signal>
-<signal name="N$20">
+<signal name="R81_A">
 <contactref element="R81" pad="1"/>
 </signal>
-<signal name="N$21">
+<signal name="R81_B">
 <contactref element="R81" pad="2"/>
 </signal>
-<signal name="N$22">
+<signal name="R51_A">
 <contactref element="R51" pad="1"/>
 </signal>
-<signal name="N$23">
+<signal name="R51_B">
 <contactref element="R51" pad="2"/>
 </signal>
-<signal name="N$24">
+<signal name="R52_A">
 <contactref element="R52" pad="1"/>
 </signal>
-<signal name="N$25">
+<signal name="R52_B">
 <contactref element="R52" pad="2"/>
 </signal>
-<signal name="N$26">
+<signal name="R49_A">
 <contactref element="R49" pad="1"/>
 </signal>
-<signal name="N$27">
+<signal name="R49_B">
 <contactref element="R49" pad="2"/>
 </signal>
-<signal name="N$28">
+<signal name="R100_A">
 <contactref element="R100" pad="1"/>
 </signal>
-<signal name="N$29">
+<signal name="R100_B">
 <contactref element="R100" pad="2"/>
 </signal>
-<signal name="N$30">
+<signal name="R99_A">
 <contactref element="R99" pad="1"/>
 </signal>
-<signal name="N$31">
+<signal name="R99_B">
 <contactref element="R99" pad="2"/>
 </signal>
-<signal name="N$32">
+<signal name="R27_A">
 <contactref element="R27" pad="1"/>
 </signal>
-<signal name="N$33">
+<signal name="R27_B">
 <contactref element="R27" pad="2"/>
 </signal>
-<signal name="N$34">
+<signal name="R7_A">
 <contactref element="R7" pad="1"/>
 </signal>
-<signal name="N$35">
+<signal name="R7_B">
 <contactref element="R7" pad="2"/>
 </signal>
-<signal name="N$36">
+<signal name="R6_A">
 <contactref element="R6" pad="1"/>
 </signal>
-<signal name="N$37">
+<signal name="R6_B">
 <contactref element="R6" pad="2"/>
 </signal>
-<signal name="N$38">
+<signal name="R54_A">
 <contactref element="R54" pad="1"/>
 </signal>
-<signal name="N$39">
+<signal name="R54_B">
 <contactref element="R54" pad="2"/>
 </signal>
 <signal name="N$40">
@@ -1127,130 +1127,130 @@ design rules under a new name.</description>
 <signal name="N$48">
 <contactref element="Q10" pad="2"/>
 </signal>
-<signal name="N$49">
+<signal name="C26_A">
 <contactref element="C26" pad="1"/>
 </signal>
-<signal name="N$50">
+<signal name="C26_B">
 <contactref element="C26" pad="2"/>
 </signal>
-<signal name="N$51">
+<signal name="C31_A">
 <contactref element="C31" pad="1"/>
 </signal>
-<signal name="N$52">
+<signal name="C31_B">
 <contactref element="C31" pad="2"/>
 </signal>
-<signal name="N$53">
+<signal name="C39_A">
 <contactref element="C39" pad="1"/>
 </signal>
-<signal name="N$54">
+<signal name="C39_B">
 <contactref element="C39" pad="2"/>
 </signal>
-<signal name="N$55">
+<signal name="C38_A">
 <contactref element="C38" pad="1"/>
 </signal>
-<signal name="N$56">
+<signal name="C38_B">
 <contactref element="C38" pad="2"/>
 </signal>
-<signal name="N$57">
+<signal name="C23_A">
 <contactref element="C23" pad="1"/>
 </signal>
-<signal name="N$58">
+<signal name="C23_B">
 <contactref element="C23" pad="2"/>
 </signal>
-<signal name="N$59">
+<signal name="C21_A">
 <contactref element="C21" pad="1"/>
 </signal>
-<signal name="N$60">
+<signal name="C21_B">
 <contactref element="C21" pad="2"/>
 </signal>
-<signal name="N$61">
+<signal name="C29_A">
 <contactref element="C29" pad="1"/>
 </signal>
-<signal name="N$62">
+<signal name="C29_B">
 <contactref element="C29" pad="2"/>
 </signal>
-<signal name="N$63">
+<signal name="C24_A">
 <contactref element="C24" pad="1"/>
 </signal>
-<signal name="N$64">
+<signal name="C24_B">
 <contactref element="C24" pad="2"/>
 </signal>
-<signal name="N$65">
+<signal name="C11_A">
 <contactref element="C11" pad="1"/>
 </signal>
-<signal name="N$66">
+<signal name="C11_B">
 <contactref element="C11" pad="2"/>
 </signal>
-<signal name="N$67">
+<signal name="C25_A">
 <contactref element="C25" pad="1"/>
 </signal>
-<signal name="N$68">
+<signal name="C25_B">
 <contactref element="C25" pad="2"/>
 </signal>
-<signal name="N$71">
+<signal name="C33_A">
 <contactref element="C33" pad="1"/>
 </signal>
-<signal name="N$72">
+<signal name="C33_B">
 <contactref element="C33" pad="2"/>
 </signal>
-<signal name="N$73">
+<signal name="R5_A">
 <contactref element="R5" pad="1"/>
 </signal>
-<signal name="N$74">
+<signal name="R5_B">
 <contactref element="R5" pad="2"/>
 </signal>
-<signal name="N$75">
+<signal name="R64_A">
 <contactref element="R64" pad="1"/>
 </signal>
-<signal name="N$76">
+<signal name="R64_B">
 <contactref element="R64" pad="2"/>
 </signal>
-<signal name="N$77">
+<signal name="C36_A">
 <contactref element="C36" pad="1"/>
 </signal>
-<signal name="N$78">
+<signal name="C36_B">
 <contactref element="C36" pad="2"/>
 </signal>
-<signal name="N$79">
+<signal name="R66_A">
 <contactref element="R66" pad="1"/>
 </signal>
-<signal name="N$80">
+<signal name="R66_B">
 <contactref element="R66" pad="2"/>
 </signal>
-<signal name="N$81">
+<signal name="R18_A">
 <contactref element="R18" pad="1"/>
 </signal>
-<signal name="N$82">
+<signal name="R18_B">
 <contactref element="R18" pad="2"/>
 </signal>
-<signal name="N$83">
+<signal name="R23_A">
 <contactref element="R23" pad="1"/>
 </signal>
-<signal name="N$84">
+<signal name="R23_B">
 <contactref element="R23" pad="2"/>
 </signal>
-<signal name="N$85">
+<signal name="R29_A">
 <contactref element="R29" pad="1"/>
 </signal>
-<signal name="N$86">
+<signal name="R29_B">
 <contactref element="R29" pad="2"/>
 </signal>
-<signal name="N$87">
+<signal name="R60_A">
 <contactref element="R60" pad="1"/>
 </signal>
-<signal name="N$88">
+<signal name="R60_B">
 <contactref element="R60" pad="2"/>
 </signal>
-<signal name="N$89">
+<signal name="R22_A">
 <contactref element="R22" pad="1"/>
 </signal>
-<signal name="N$90">
+<signal name="R22_B">
 <contactref element="R22" pad="2"/>
 </signal>
-<signal name="N$91">
+<signal name="R55_A">
 <contactref element="R55" pad="1"/>
 </signal>
-<signal name="N$92">
+<signal name="R55_B">
 <contactref element="R55" pad="2"/>
 </signal>
 <signal name="N$93">
@@ -1259,58 +1259,58 @@ design rules under a new name.</description>
 <signal name="N$94">
 <contactref element="C20A" pad="2"/>
 </signal>
-<signal name="N$95">
+<signal name="R61_A">
 <contactref element="R61" pad="1"/>
 </signal>
-<signal name="N$96">
+<signal name="R61_B">
 <contactref element="R61" pad="2"/>
 </signal>
-<signal name="N$97">
+<signal name="R59_A">
 <contactref element="R59" pad="1"/>
 </signal>
-<signal name="N$98">
+<signal name="R59_B">
 <contactref element="R59" pad="2"/>
 </signal>
-<signal name="N$99">
+<signal name="R76_A">
 <contactref element="R76" pad="1"/>
 </signal>
-<signal name="N$100">
+<signal name="R76_B">
 <contactref element="R76" pad="2"/>
 </signal>
-<signal name="N$101">
+<signal name="R68_A">
 <contactref element="R68" pad="1"/>
 </signal>
-<signal name="N$102">
+<signal name="R68_B">
 <contactref element="R68" pad="2"/>
 </signal>
-<signal name="N$103">
+<signal name="R26_A">
 <contactref element="R26" pad="1"/>
 </signal>
-<signal name="N$104">
+<signal name="R26_B">
 <contactref element="R26" pad="2"/>
 </signal>
-<signal name="N$105">
+<signal name="R71_A">
 <contactref element="R71" pad="1"/>
 </signal>
-<signal name="N$106">
+<signal name="R71_B">
 <contactref element="R71" pad="2"/>
 </signal>
-<signal name="N$107">
+<signal name="R25_A">
 <contactref element="R25" pad="1"/>
 </signal>
-<signal name="N$108">
+<signal name="R25_B">
 <contactref element="R25" pad="2"/>
 </signal>
-<signal name="N$109">
+<signal name="R30_A">
 <contactref element="R30" pad="1"/>
 </signal>
-<signal name="N$110">
+<signal name="R30_B">
 <contactref element="R30" pad="2"/>
 </signal>
-<signal name="N$111">
+<signal name="R77_A">
 <contactref element="R77" pad="1"/>
 </signal>
-<signal name="N$112">
+<signal name="R77_B">
 <contactref element="R77" pad="2"/>
 </signal>
 <signal name="N$113">
@@ -1328,10 +1328,10 @@ design rules under a new name.</description>
 <signal name="N$117">
 <contactref element="Q11" pad="3"/>
 </signal>
-<signal name="N$118">
+<signal name="C35_A">
 <contactref element="C35" pad="1"/>
 </signal>
-<signal name="N$119">
+<signal name="C35_B">
 <contactref element="C35" pad="2"/>
 </signal>
 <signal name="N$120">
@@ -1343,28 +1343,28 @@ design rules under a new name.</description>
 <signal name="N$122">
 <contactref element="Q12" pad="3"/>
 </signal>
-<signal name="N$123">
+<signal name="C16_A">
 <contactref element="C16" pad="1"/>
 </signal>
-<signal name="N$124">
+<signal name="C16_B">
 <contactref element="C16" pad="2"/>
 </signal>
-<signal name="N$125">
+<signal name="C17_A">
 <contactref element="C17" pad="1"/>
 </signal>
-<signal name="N$126">
+<signal name="C17_B">
 <contactref element="C17" pad="2"/>
 </signal>
-<signal name="N$127">
+<signal name="R43_A">
 <contactref element="R43" pad="1"/>
 </signal>
-<signal name="N$128">
+<signal name="R43_B">
 <contactref element="R43" pad="2"/>
 </signal>
-<signal name="N$129">
+<signal name="R45_A">
 <contactref element="R45" pad="1"/>
 </signal>
-<signal name="N$130">
+<signal name="R45_B">
 <contactref element="R45" pad="2"/>
 </signal>
 <signal name="N$131">
