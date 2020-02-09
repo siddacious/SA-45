@@ -1,0 +1,13 @@
+# reference:
+https://blog.includesecurity.com/2015/11/NordicSemi-ARM-SoC-Firmware-dumping-technique.html
+https://www.pentestpartners.com/security-blog/nrf51822-code-readout-protection-bypass-a-how-to/
+
+# openocd startup using j-link
+openocd.exe -f interface\jlink.cfg  -c "transport select swd" -c "adapter_khz 6000" -f target\nrf51.cfg
+
+# openocd command to reset and halt the processor
+reset halt
+
+# scripts
+drop.py   : searches for an instruction that will write contents of a memory address to 
+pickup.py : using the instruction found with drop.py, will read back the contents of flash memory
