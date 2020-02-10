@@ -23,3 +23,32 @@ arm-none-eabi-objcopy -I binary -B arm -O ihex -S backup.bin backup.hex
 
 #to program via SWD & JLink:
 nrfjprog -f nrf51 --program backup.hex
+
+
+
+my basic understanding is there are two serial lines (each with their own clock, so 4 wires total) between the bluetooth and audio microcontrollers. i did do several captures on those lines with a logic analyzer.
+
+bluetooth controller sends commands to the audio controller to tell it what to play. those commands come in the form of two bytes. the first byte is the command (THIS IS ALL ASSUMPTION based on what I've seen) which is always 0x10 followed by a second byte which identifies which group of audio clips the audio controller should play from.
+[9:23 PM]  Spork | Dead Bothans: What wisdom will he bestow.
+[9:24 PM]  Ruthsarian: at startup or when a new personality chip is inserted, there is a bunch more data that is send between them. i can pick out personality chip ID and affiliation ID from them.
+[9:25 PM]  Ruthsarian: but without any captures from an R2 I can't confirm whether or not there's a difference (such as a "HEY I'm an R2!"
+[9:26 PM]  Cowkitty | Dead Bothans: @Mia Honestly, I’d recommend a different approach: we’ve confirmed the droid controller sends different commands per button, so it’s the BB firmware that’s deciding to just use the accessory unique button code to play sounds. I’d look into seeing what the firmware does when it sees that button code, and look into modding that. Problem is you might not have a pin already wired/accessible to send power to like the R2 units. Not sure— we haven’t done a tear down on both to compare yet.
+[9:26 PM]  Ruthsarian: also, with the bb unit at least, that 'play sound' command is the same whether you're pressing the 'accessory' or sound button.
+[9:27 PM]  Cowkitty | Dead Bothans: From the remote? Or from the BB?
+[9:27 PM]  Ruthsarian: from bb's bluetooth microcontroller to the audio controller
+[9:29 PM]  Cowkitty | Dead Bothans: Gotcha. Yeah, that’s what I said above. Bb heard unique command from remote, and says “play sound” instead of “power to accessory pin”
+[9:30 PM]  Mia: Yeah, that's my ultimate goal, finding the input routine and making the accessory button into a call to "play from blaster sound bank" instead of "play from random sound bank." But to get a breakpoint in there I think I'm gonna have to figure out when it's making a call to the sound chip, then roll up the stack.
+[9:31 PM]  Ruthsarian: i've seen schematics that others have made of the bb and r2 hardware. the pinouts for the bluetooth controller are very similar. differences being the accessory detection pins on the R2 are used to read the trimpot in the BB unit. belief being the trimpot controls balancing the two motors in the BB unit so it drives straight.
+[9:31 PM]  Cowkitty | Dead Bothans: @Ruthsarian Yeah, that’s what I feared. I didn’t think they’d waste a pin on the BB for that
+[9:32 PM]  Cowkitty | Dead Bothans: Also, there’s one one MCU in the droids, right? The nRF51822?
+[9:33 PM]  Ruthsarian: yes, the nrf51822 is what i'm calling the bluetooth microcontroller. the generaplus microcontroller that reads the personality chip, plays audio, and drives the LEDs in the head to blink in sync, i'm calling that the audio microcontroller.
+[9:35 PM]  Cowkitty | Dead Bothans: Ah, gotcha. Sorry, it rubs me the wrong way when people say “Bluetooth firmware” instead of referring to it as the main droid MCU, like it’s just an additional sensor or something. Hahaha.
+[9:36 PM]  Cowkitty | Dead Bothans: But I know I’m weird about that. :slight_smile: what you said makes sense.
+[9:39 PM]  Cowkitty | Dead Bothans: @Mia are you looking to just play the accessory sounds, or actually turn on an additional light, etc?
+[9:40 PM]  Mia: Just play the sounds. (I want a dedicated button to a particular sound bank.)
+[9:42 PM]  Cowkitty | Dead Bothans: Ah, that’s a lot easier
+[9:42 PM]  Cowkitty | Dead Bothans: Requirements Gathering++
+[9:46 PM]  Mia: I hope so, anyway. Just gotta keep digging. :gabby_thumb:
+[9:51 PM]  Cowkitty | Dead Bothans: @Mia Have you altered firmware before?
+[9:52 PM]  Mia: Not specifically firmware, but I've made romhacks, so I'm familiar with the process of reverse-engineering assembly.
+[9:55 PM]  Mia: It seems after one night of investigation like lots of the userspace code is implemented as interrupts on top of the S130 softdevice, so I'm figuring out how to get down in there with my wrench and start hitting things.
