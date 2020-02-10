@@ -25,30 +25,87 @@ arm-none-eabi-objcopy -I binary -B arm -O ihex -S backup.bin backup.hex
 nrfjprog -f nrf51 --program backup.hex
 
 
-
-my basic understanding is there are two serial lines (each with their own clock, so 4 wires total) between the bluetooth and audio microcontrollers. i did do several captures on those lines with a logic analyzer.
-
+[9:24 PM]  Ruthsarian: my basic understanding is there are two serial lines (each with their own clock, so 4 wires total) between the bluetooth and audio microcontrollers. i did do several captures on those lines with a logic analyzer.
 bluetooth controller sends commands to the audio controller to tell it what to play. those commands come in the form of two bytes. the first byte is the command (THIS IS ALL ASSUMPTION based on what I've seen) which is always 0x10 followed by a second byte which identifies which group of audio clips the audio controller should play from.
-[9:23 PM]  Spork | Dead Bothans: What wisdom will he bestow.
 [9:24 PM]  Ruthsarian: at startup or when a new personality chip is inserted, there is a bunch more data that is send between them. i can pick out personality chip ID and affiliation ID from them.
 [9:25 PM]  Ruthsarian: but without any captures from an R2 I can't confirm whether or not there's a difference (such as a "HEY I'm an R2!"
 [9:26 PM]  Cowkitty | Dead Bothans: @Mia Honestly, I’d recommend a different approach: we’ve confirmed the droid controller sends different commands per button, so it’s the BB firmware that’s deciding to just use the accessory unique button code to play sounds. I’d look into seeing what the firmware does when it sees that button code, and look into modding that. Problem is you might not have a pin already wired/accessible to send power to like the R2 units. Not sure— we haven’t done a tear down on both to compare yet.
 [9:26 PM]  Ruthsarian: also, with the bb unit at least, that 'play sound' command is the same whether you're pressing the 'accessory' or sound button.
-[9:27 PM]  Cowkitty | Dead Bothans: From the remote? Or from the BB?
 [9:27 PM]  Ruthsarian: from bb's bluetooth microcontroller to the audio controller
 [9:29 PM]  Cowkitty | Dead Bothans: Gotcha. Yeah, that’s what I said above. Bb heard unique command from remote, and says “play sound” instead of “power to accessory pin”
 [9:30 PM]  Mia: Yeah, that's my ultimate goal, finding the input routine and making the accessory button into a call to "play from blaster sound bank" instead of "play from random sound bank." But to get a breakpoint in there I think I'm gonna have to figure out when it's making a call to the sound chip, then roll up the stack.
 [9:31 PM]  Ruthsarian: i've seen schematics that others have made of the bb and r2 hardware. the pinouts for the bluetooth controller are very similar. differences being the accessory detection pins on the R2 are used to read the trimpot in the BB unit. belief being the trimpot controls balancing the two motors in the BB unit so it drives straight.
 [9:31 PM]  Cowkitty | Dead Bothans: @Ruthsarian Yeah, that’s what I feared. I didn’t think they’d waste a pin on the BB for that
-[9:32 PM]  Cowkitty | Dead Bothans: Also, there’s one one MCU in the droids, right? The nRF51822?
-[9:33 PM]  Ruthsarian: yes, the nrf51822 is what i'm calling the bluetooth microcontroller. the generaplus microcontroller that reads the personality chip, plays audio, and drives the LEDs in the head to blink in sync, i'm calling that the audio microcontroller.
-[9:35 PM]  Cowkitty | Dead Bothans: Ah, gotcha. Sorry, it rubs me the wrong way when people say “Bluetooth firmware” instead of referring to it as the main droid MCU, like it’s just an additional sensor or something. Hahaha.
-[9:36 PM]  Cowkitty | Dead Bothans: But I know I’m weird about that. :slight_smile: what you said makes sense.
-[9:39 PM]  Cowkitty | Dead Bothans: @Mia are you looking to just play the accessory sounds, or actually turn on an additional light, etc?
-[9:40 PM]  Mia: Just play the sounds. (I want a dedicated button to a particular sound bank.)
-[9:42 PM]  Cowkitty | Dead Bothans: Ah, that’s a lot easier
-[9:42 PM]  Cowkitty | Dead Bothans: Requirements Gathering++
-[9:46 PM]  Mia: I hope so, anyway. Just gotta keep digging. :gabby_thumb:
-[9:51 PM]  Cowkitty | Dead Bothans: @Mia Have you altered firmware before?
-[9:52 PM]  Mia: Not specifically firmware, but I've made romhacks, so I'm familiar with the process of reverse-engineering assembly.
-[9:55 PM]  Mia: It seems after one night of investigation like lots of the userspace code is implemented as interrupts on top of the S130 softdevice, so I'm figuring out how to get down in there with my wrench and start hitting things.
+
+[9:12 AM]  Mia: You have anything written down about, like, what byte the command is, or what it responds with to represent the two models?
+[9:12 AM]  Russ: the serial register for droid model is reg 0x01
+[9:12 AM]  Russ: bb series is 2, r2 series is 1
+[9:40 AM]  Cowkitty | Dead Bothans: Check the spreadsheet. Already proven those same identifiers are used as beacons, sans chips.
+[9:58 AM]  Russ: I know, that one comes from the personality chip
+[9:58 AM]  Russ: the default personality chip in the generalplus rom
+[9:59 AM]  Russ: hence you only get the value from the installed personality chip instead when one is inserted
+[9:59 AM]  holapenguin: if no chip, you can tell.  if has chip, you can't tell, from a beaconing point of view. you're both saying the same thing, no confusion
+[10:02 AM]  Russ: the issue is that there are two different droid identifiers. One the droid uses internally, and the other that is tied to the personality chip
+[10:41 AM]  Ruthsarian: I did put a logic analyzer on the lines between the nRF (bluetooth) and GP (audio) microcontrollers in the BB droid a while back. I believe there are two separate serial channels (each channel consisting of data line and a clock line). Each channel is one-way. So there's the line from nRF to GP and a second line, GP to NRF. Treating these lines as such, when I 'decode' the data, this is an example of the data I see.
+On power on w/no personality chip
+    (from gp to nrf)    00 00 00 00 02 00 00 02 00 00 01 00 00 00 00 00 00
+    (from nrf to gp)    00 00 01 00 00 08 00 00 0a 00 00 00 00 42 02 0e 1c
+
+On power on w/personality chip (black)
+    (from gp to nrf)    80 00 80 00 02 80 00 08 80 00 09 80 00 80 00 80 00
+    (from nrf to gp)    00 00 01 00 00 08 00 00 0a 00 00 00 00 42 02 0e 1c
+
+On personality chip insertion (purple)
+    (from gp to nrf)    80 00 80 00 07 80 00 01
+    (from nrf to gp)    00 00 08 00 00 0a 00 00
+
+On removal of personality chip
+    (from gp to nrf)    00 00 00 00 02 00 00 01
+    (from nrf to gp)    00 00 08 00 00 0a 00 00
+
+On audio button press
+    (from gp to nrf)    80 00
+    (from nrf to gp)    10 00
+[10:43 AM]  Ruthsarian: However, the audio button press data, for example, matches up with what audio plays. 0x10 being the command to play an audio clip. Then the byte that follows it identifying the group to play an audio clip from (that value being zero-indexed, so 0x00 = audio group 1)
+[10:44 AM]  Ruthsarian: and the personality chip insertion and removal seems to include data that matches with the chip being inserted (chip ID and affiliation ID)
+[10:45 AM]  Ruthsarian: when reacting to a beacon, the data looks the same as a button press. meaning the nRF chip tells the GP chip what audio group to play from.
+[10:57 AM]  Ruthsarian: my interpretation of what the key bytes of the data are
+    power on, gp to nrf:
+        byte  5 = droid type
+        byte  8 = personality chip
+        byte 11 = affiliation
+
+    change of personality chip, gp to nrf:
+        byte 5 = new personality chip
+        byte 8 = affiliation
+
+    play audio (nrf to gp):
+        byte 2 = audio group to play from
+[11:12 AM]  Russ: @Ruthsarian there's a 5th serial line that the generalplus uses to notify the nrf, eg, when there is a new personality chip
+[11:13 AM]  Ruthsarian: is it serial, or is it just change state to notify there's a change. i did see that line and i analyzed it, but i didn't see data on it, just an occasional change in state
+[11:14 AM]  Russ: it's like an interrupt
+[11:15 AM]  Russ: each serial transaction is an exchange, write byte while reading byte.
+[11:15 AM]  Russ: for a reg read, it writes the register to read while reading back a byte it throws away, then writes a zero while reading back the byte
+[11:16 AM]  Russ: for reg write, it writes the reg to write while reading back a byte it throws away, then writes the value while reading a value it throws away
+[11:16 AM]  Russ: I suspect that the register number indicates where it is going to be a read or a write
+[11:17 AM]  Ruthsarian: that is a personality chip being inserted event. the top signal is that 5th line you were talking about.
+[11:18 AM]  Russ: 1, 8, and 10 are the only registers I see as read registers
+[11:18 AM]  Russ: (droid type, personality chip, affiliation)
+[11:19 AM]  Russ: oh, and 0, which seems to be a status bitfield
+[11:24 AM]  Mia: So what distinguishes a write on this protocol from a read? Is that image then the lower device saying to the upper device “write register 8: 0000, then write register A: 0000”?
+[11:24 AM]  Russ: afaik it's just the register number
+[11:25 AM]  Russ: hmm...actually it could be the middle exchange, forgot about that one
+[11:25 AM]  Russ: read has three exchanges
+[11:26 AM]  Russ: write has 2
+[11:26 AM]  Russ: the pattern might just be, exchange 1 - register, exchange 2 - write byte, exchange 3 - read byte
+[11:27 AM]  Mia: Hmm. So the difference is then that for a write you just throw away whatever you get back as the read.
+[11:27 AM]  Russ: for writes it just does 2 exchanges
+[11:30 AM]  Russ: and it looks like on the first exchange the status byte is always returned
+[11:44 AM]  Ruthsarian: @Russ the droid type is in register 1? by register do you mean register 1 of the cortex-m0 at the center of the nrf or is that value being stored somewhere else? and can you tell whether or not that value is being checked every time a button press is received? in other words, if I had a debugger connected, could I modify that register value to make the droid think it's another droid?
+[11:44 AM]  Russ: the gp
+[11:44 AM]  Russ: so you see on the nrf transmit, its 01 00 00, and then from the gp 00 00 02
+[11:44 AM]  Russ: that's reading value 2 from reg 1
+[11:45 AM]  Russ: there's several droid config things that only happen during boot
+[12:48 PM]  holapenguin: for all, see this if you're wanting to use ghirdra collaboratively https://medium.com/@jannis.kirschner/ghidra-collaborative-reversing-1-2-how-to-setup-a-ghidra-server-711f4212912e
+
+ https://discord.gg/pgeEQd
